@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  vendor.api:
+    image: ${DOCKER_REGISTRY-}vendorapi
+    build:
+      context: .
+      dockerfile: Services/Vendor/Vendor.API/Dockerfile
